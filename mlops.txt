@@ -1,0 +1,97 @@
+https://jongsky.tistory.com/71
+
+
+1. 데이터
+ 
+
+- 데이터 수집 파이프라인 (Data Ingestion Pipeline):
+Sqoop: Apache Hadoop과 관계형 데이터베이스 사이에서 대량의 데이터를 효율적으로 전송하는 도구.
+Flume: 대량의 로그 데이터를 효율적으로 수집, 집계 및 이동하는 분산형, 안정적이고 사용 가능한 서비스.
+Kafka: 이벤트 스트리밍을 위한 분산 플랫폼으로, 실시간 데이터 파이프라인 및 스트리밍 애플리케이션을 구축하는 데 사용됨.
+Flink: 대용량 데이터 처리 및 분석을 위한 오픈 소스 스트림 처리 프레임워크.
+Spark Streaming: 배치 처리 엔진인 Spark의 확장으로, 스트림 처리를 지원함.
+Airflow: 워크플로우를 프로그래밍 방식으로 작성, 예약 및 모니터링하는 플랫폼.
+
+
+- 데이터 저장 (Data Storage):
+MySQL: 널리 사용되는 오픈 소스 관계형 데이터베이스 관리 시스템.
+Hadoop: 대규모 데이터 집합을 처리하기 위해 설계된 분산 저장 및 처리 프레임워크.
+Amazon S3: Amazon Web Services (AWS)에서 제공하는 확장 가능한 객체 저장 서비스.
+MinIO: Amazon S3와 호환되는 오픈 소스 객체 저장 서버.
+
+
+- 데이터 관리 (Data Management):
+TFDV (TensorFlow Data Validation): 머신 러닝 데이터를 탐색하고 유효성을 검사하는 라이브러리.
+DVC (Data Version Control): 데이터 버전 관리, 워크플로우 및 실험 관리를 위한 오픈 소스 도구.
+Feast: 머신 러닝 기능을 관리하고 제공하기 위한 오픈 소스 피처 스토어.
+Amundsen: 데이터의 메타데이터 및 검색을 관리하기 위한 오픈 소스 데이터 디스커버리 및 메타데이터 플랫폼.
+
+ 
+
+2. 모델
+ 
+
+- 모델 개발 (Model Development):
+Jupyter Hub (주피터 허브): 대규모로 여러 사용자가 공유하며 주피터 노트북을 사용할 수 있는 웹 기반의 환경.
+Docker (도커): 소프트웨어를 컨테이너로 패키징하고 배포하기 위한 플랫폼.
+Kubeflow (쿠베플로우): Kubernetes 위에서 머신 러닝 워크로드를 구축, 배포 및 관리하기 위한 오픈 소스 플랫폼.
+Optuna (옵투나): 하이퍼파라미터 최적화를 자동화하는 파이썬 기반의 라이브러리.
+Ray (레이): 분산 애플리케이션을 구축하기 위한 오픈 소스 라이브러리.
+Katib (캐티브): Kubernetes 상에서 하이퍼파라미터 튜닝을 수행하기 위한 Kubeflow의 하위 프로젝트.
+
+
+- 모델 버전 관리 (Model Versioning):
+Git (깃): 분산 버전 관리 시스템으로 코드 및 모델의 변경 이력을 추적하는 데 사용.
+MLflow (엠엘플로우): 오픈 소스 머신 러닝 플랫폼으로, 모델 라이프사이클을 관리하고 추적하는 데 사용됨.
+Github Action (깃허브 액션): GitHub에서 제공하는 지속적 통합 및 지속적 배포(CI/CD)를 자동화하기 위한 기능.
+Jenkins (젠킨스): 지속적 통합 및 지속적 배포를 위한 자동화 도구.
+
+ 
+
+- 모델 학습 스케줄링 관리 (Model Training Scheduling Management):
+Grafana (그라파나): 다양한 데이터 소스에서 지표 및 로그 데이터를 시각화하기 위한 대시보드 및 분석 플랫폼.
+Kubernetes (쿠버네티스): 컨테이너화된 애플리케이션의 자동 배포, 확장 및 관리를 위한 오픈 소스 컨테이너 오케스트레이션 플랫폼.
+
+ 
+
+3. 서빙
+ 
+
+- 모델 패키징 (Model Packaging):
+Docker (도커): 소프트웨어를 컨테이너로 패키징하고 배포하기 위한 플랫폼. 모델과 관련된 의존성 및 환경을 격리된 컨테이너로 만들어 효율적인 배포를 지원.
+Flask (플라스크): Python으로 작성된 웹 애플리케이션 및 RESTful API를 개발하기 위한 경량 프레임워크.
+FastAPI (패스트API): 빠르게 작동하는 Python 웹 프레임워크로, 빠른 API 개발 및 배포를 지원. 특히 ASGI(Asynchronous Server Gateway Interface)를 기반으로 하여 비동기 작업을 지원하며, 빠른 속도와 현대적인 API 기능을 제공합니다.
+BentoML (벤토엠엘): 머신 러닝 모델을 서빙하고 관리하기 위한 오픈 소스 프레임워크. 배포를 간소화하고 여러 서비스에 모델을 쉽게 배포할 수 있음.
+Kubeflow (쿠베플로우): Kubernetes 위에서 머신 러닝 워크로드를 구축, 배포 및 관리하기 위한 오픈 소스 플랫폼.
+TFServing (텐서플로 서빙): 텐서플로 모델을 서빙하기 위한 오픈 소스 서빙 시스템.
+Seldon Core (셀던 코어): Kubernetes에서 모델을 서빙하고 모델의 스케일링, 로깅, 모니터링을 관리하기 위한 오픈 소스 프레임워크.
+
+
+- 서빙 모니터링 (Serving Monitoring):
+Prometheus (프로메테우스): 오픈 소스 모니터링 및 경고 도구로, 서버 및 서비스의 성능 및 상태를 수집하고 시각화함.
+Grafana (그라파나): 다양한 데이터 소스에서 지표 및 로그 데이터를 시각화하기 위한 대시보드 및 분석 플랫폼.
+Thanos (타노스): Prometheus의 확장으로, 긴 기간에 걸쳐 모니터링 데이터를 저장하고 쿼리할 수 있는 기능을 제공.
+
+ 
+
+- 파이프라인 매니징 (Pipeline Management):
+Kubeflow (쿠베플로우): Kubernetes 위에서 ML 워크플로우를 자동화하고 관리하기 위한 플랫폼.
+Argo Workflows (아르고 워크플로우): Kubernetes에서 실행되는 복잡한 워크플로우를 관리하고 실행하기 위한 오픈 소스 워크플로우 오케스트레이션 도구.
+Airflow (에어플로우): 워크플로우를 프로그래밍 방식으로 작성, 예약 및 모니터링하는 오픈 소스 플랫폼.
+
+ 4. Cloud Vendor
+ 
+
+- AWS (Amazon Web Services): Amazon SageMaker
+Amazon SageMaker (아마존 세이지 메이커): AWS에서 제공하는 완전 관리형 머신 러닝 서비스. 데이터의 전처리부터 모델 학습 및 배포까지의 전 과정을 통합하여 제공하며, 자동화된 기능들을 통해 머신 러닝 모델을 쉽게 개발하고 배포할 수 있게 해줍니다. SageMaker는 분산 학습, 튜닝, 주피터 노트북 등 다양한 기능을 제공하여 엔드 투 엔드 머신 러닝 워크플로우를 지원합니다.
+- Google: Vertex AI
+Vertex AI (버텍스 AI): Google Cloud의 머신 러닝 및 인공 지능 플랫폼. 모델 개발, 배포, 모니터링 및 관리를 위한 통합된 환경을 제공합니다. Vertex AI는 AutoML 기능을 강화한 통합된 서비스로, 머신 러닝을 쉽게 적용할 수 있도록 지원하며, TensorBoard와 같은 시각화 도구를 포함하여 엔드 투 엔드 머신 러닝 워크플로우를 제공합니다.
+- Azure (Microsoft Azure): Azure Machine Learning
+Azure Machine Learning (아즈어 머신 러닝): Microsoft Azure에서 제공하는 머신 러닝 서비스. Azure Machine Learning은 머신 러닝 모델의 개발, 훈련, 배포 및 관리를 지원하는 통합 플랫폼입니다. 자동화된 기능들과 풍부한 모델 개발 도구를 제공하며, Azure의 다양한 클라우드 서비스와 통합하여 사용할 수 있습니다. Azure Machine Learning은 기계 학습 실험을 추적하고 모델 성능을 모니터링하는 기능도 제공합니다.
+
+
+
+=======
+
+
+https://jimmy-ai.tistory.com/336#google_vignette
